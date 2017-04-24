@@ -21,11 +21,18 @@
 
         <meta-data
             android:name="io.fabric.ApiKey"
-            android:value="2b6cb3eab7098d0526e96f3c7bed4013ed39a5f4"
-            />
+            android:value="2b6cb3eab7098d0526e96f3c7bed4013ed39a5f4" />
+
+        <activity android:name=".TweetListActivity">
+
+            android:parentActivityName="com.example.myfirstapp.MainActivity" >
+            <!-- provide parent activity to enable back feature -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
 
     </application>
-
-    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
